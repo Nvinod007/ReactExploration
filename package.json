@@ -1,0 +1,29 @@
+{
+  "name": "basicreact",
+  "version": "1.0.0",
+  "description": "This is basic react project to explore about more of react from scratch",
+
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "basic",
+    "react",
+    "react",
+    "explore",
+    "react"
+  ],
+  "author": "Vinod Kumar",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserslist":[
+    "last 2 versions"
+  ]
+}

@@ -1,25 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-const heading = React.createElement('h1', { id: 'heading' }, 'Hello world from React')
 const root = ReactDOM.createRoot(document.getElementById('root'))
-
-console.log('heading', heading);
-
-// Render neted elements in react
-const parent1 = React.createElement(
-  'div',
-  { id: 'parent' },
-  React.createElement(
-    'div',
-    { id: 'child' },
-    React.createElement(
-      'h1',
-      { id: 'heading' },
-      'Hello world from React in child')
-  )
-)
-
 const parent = React.createElement(
   'div',
   { id: 'parent' },
@@ -32,5 +14,26 @@ const parent = React.createElement(
   )
 )
 console.log('parent', parent);
-root.render(heading)
-root.render(parent)
+
+const JSXParent = <h1 id='head1'>Heading </h1>
+
+// React Components
+/**
+ * ? Functional Based and Class Based
+ * * Functional Based component is nothing but a function which returns  JSX
+ * 
+ */
+// ! Functional component
+const HeadComponent = ()=>{
+  return <h1>Header in functional component!</h1>
+}
+
+// * Difference Between component and Element
+const HeadComponent1 = ()=> <h1>Header in functional component!</h1>
+const HeadElement =  <h1>Header in functional component!</h1>
+
+/**
+ * ? root.render(JSXParent) is for react elements
+ * ? root.render(<HeadComponent />) is for react components
+ */
+root.render(<HeadComponent />)

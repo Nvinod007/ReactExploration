@@ -4,6 +4,7 @@
   "description": "This is basic react project to explore about more of react from scratch",
 
   "scripts": {
+    "start": "parcel index.html",
     "test": "jest"
   },
   "keywords": [
